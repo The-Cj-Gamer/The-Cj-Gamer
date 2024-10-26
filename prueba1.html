@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillero de Investigación</title>
+    <link rel="stylesheet" href="prueba1.css">
+</head>
+<body>
+    <header>
+
+        <h1>Semillero de Investigación</h1>
+        <p>Investigación, Innovación y Desarrollo</p>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="img/reunion1.jpg" alt="Imagen 1" class="carousel-image">
+          <img src="img/reunion2.jpg" alt="Imagen 2" class="carousel-image">
+          <img src="img/reunion3.jpg" alt="Imagen 3" class="carousel-image">
+          <img src="img/reunion4.jpg" alt="Imagen 4" class="carousel-image">
+        </div>
+      
+        <!-- Botones para controlar el carrusel -->
+        <button class="carousel-btn prev" onclick="prevImage()">Anterior</button>
+        <button class="carousel-btn next" onclick="nextImage()">Posterior</button>
+      </div>
+      
+    <link rel="stylesheet" href="styles.css">
+    
+      <nav>
+        <ul>
+            <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+            <li><a href="#lineas-investigacion">Líneas de Investigación</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="quienes-somos">
+
+        <h2>¿Quiénes Somos?</h2>
+
+        <p>El Semillero de Investigación está conformado por estudiantes y docentes dedicados a la exploración y desarrollo de nuevas ideas.</p>
+        <img src="img/compañeros.jpeg" class="img-01"/>
+    </section>
+
+    <section id="lineas-investigacion">
+        <h2>Líneas de Investigación</h2>
+
+        <ul>
+            <li><button onclick="mostrarInfo('tecnologia')">Tecnología y Sociedad</button></li>
+            <li><button onclick="mostrarInfo('sostenibilidad')">Desarrollo Sostenible</button></li>
+            <li><button onclick="mostrarInfo('educacion')">Innovación en la Educación</button></li>
+            <li><button onclick="mostrarInfo('salud')">Salud y Bienestar</button></li>
+        </ul>
+        <div id="info-investigacion"></div>
+    </section>
+
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <p>Mantente informado de nuestros próximos eventos y presentaciones:</p>
+        <ul>
+            <li>Simposio de Investigación - 15 de Noviembre 2024</li>
+            <li>Taller de Innovación Tecnológica - 5 de Diciembre 2024</li>
+        </ul>
+        <button onclick="agregarEvento()">Agregar un nuevo evento</button>
+        <div id="nuevo-evento"></div>
+    </section>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Correo electrónico: contacto@semillero.com</p>
+        <p>Teléfono: +57 123 456 7890</p>
+        <p>Dirección: Calle 123, Ciudad Universitaria</p>
+        <p>&copy; 2024 Semillero de Investigación. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="prueba1.js"></script>
+</body>
+</html>
